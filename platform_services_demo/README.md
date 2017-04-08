@@ -1,10 +1,12 @@
 # platform_services_demo
--------------
+
 
 > demo for how using spring cloud to build up microservices 
 
 
+
 ### Demo List
+
 - configuration service 
 
 - ZUUL
