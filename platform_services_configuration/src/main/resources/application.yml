@@ -10,8 +10,14 @@ logging:
     org.springframework.cloud: 'DEBUG'
     
 
+  
+encrypt: 
+  key: platform_service_security_key
+  
 
 spring: 
+  application:
+    name: configserver
   jmx: 
     enabled: false
   cloud: 

@@ -19,10 +19,20 @@ public class ConfigurationController {
 	@Value("${hello}")
 	private String hello;
 	
+	@Value("${helloencrypt}")
+	private String helloencrypt;
+	
 	@RequestMapping(value = "demo/cfg", method = RequestMethod.GET)
 	@ResponseBody
 	public String cfg() {
 		return "hello "+hello;
+	}
+	
+	
+	@RequestMapping(value = "demo/cfg/encrypt", method = RequestMethod.GET)
+	@ResponseBody
+	public String helloencrypt() {
+		return "helloencrypt "+hello;
 	}
 
 }
