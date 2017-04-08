@@ -9,17 +9,12 @@
 
 - configuration service 
 
-> ''' @Controller
-> '''public class ConfigurationController {	
-> '''	@Value("${hello}")
-> '''	private String hello;
-	
-> '''	@RequestMapping(value = "demo/cfg", method = RequestMethod.GET)
-> '''	@ResponseBody
-> '''	public String cfg() {
-> '''		return "hello "+hello;
-> '''	}
-> '''}
+```Java  spring: 
+			  cloud: 
+			    config:
+			      name: demoapp
+			      uri: http://localhost:8888/cfg
+```
 
 - ZUUL
 
