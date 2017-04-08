@@ -9,6 +9,18 @@
 
 - configuration service 
 
+> ''' @Controller
+> '''public class ConfigurationController {	
+> '''	@Value("${hello}")
+> '''	private String hello;
+	
+> '''	@RequestMapping(value = "demo/cfg", method = RequestMethod.GET)
+> '''	@ResponseBody
+> '''	public String cfg() {
+> '''		return "hello "+hello;
+> '''	}
+> '''}
+
 - ZUUL
 
 - OAuth2
