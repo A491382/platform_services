@@ -10,10 +10,10 @@
 - configuration service 
 
 ```Java  spring: 
-			  cloud: 
-			    config:
-			      name: demoapp
-			      uri: http://localhost:8888/cfg
+		  cloud: 
+		    config:
+		      name: demoapp
+		      uri: http://localhost:8888/cfg
 ```
 
 - ZUUL
