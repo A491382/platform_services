@@ -2,4 +2,4 @@ spring:
   cloud: 
     config:
       name: demoapp
-      
+      uri: http://localhost:8888/cfg # platform_service_configuration url

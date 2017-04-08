@@ -11,7 +11,9 @@ logging:
     
 
 
-spring:
+spring: 
+  jmx: 
+    enabled: false
   cloud: 
     config:
       server:
