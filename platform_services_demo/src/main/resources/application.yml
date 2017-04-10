@@ -8,9 +8,10 @@ logging:
   level:
 #   com.netflix.discovery: 'OFF'
     org.springframework.cloud: 'DEBUG'
+    com.netflix: debug
     
 spring:
   jmx:
     enabled: false
-
-
+  application: 
+    name: platform_services_demo

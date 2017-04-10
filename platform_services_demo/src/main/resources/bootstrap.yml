@@ -1,5 +1,17 @@
+eureka:
+  client: 
+    serviceUrl:
+      defaultZone: http://localhost:9999/eureka/
+
 spring: 
+  application:
+    name: platform_services_demo
   cloud: 
     config:
       name: demoapp
-      uri: http://localhost:8888/cfg # platform_service_configuration url
+      label: master
+      discovery:
+        enabled: true
+        service-id: PLATFORM_SERVICES_CONFIGURATION
+        
+#      uri: http://localhost:8888/cfg # platform_service_configuration url

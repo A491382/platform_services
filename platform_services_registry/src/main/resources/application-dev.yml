@@ -1,0 +1,27 @@
+server:
+  port: 9999
+
+management:
+  context-path: /manage
+  
+logging:
+  level:
+#   com.netflix.discovery: 'OFF'
+    org.springframework.cloud: 'DEBUG'
+    com.netflix: 'DEBUG'
+spring:
+  application:
+    name: platform_services_registry
+
+  
+eureka: 
+  dashboard:
+    path: eurekaui
+  instance:
+    appname: platform_services_registry
+    hostname: localhost
+  client:
+    registerWithEureka: true  #是否将eureka自身作为应用注册到eureka注册中心
+    fetchRegistry: false       #为true时，可以启动，但报异常：Cannot execute request on any known server
+    serviceUrl:
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
