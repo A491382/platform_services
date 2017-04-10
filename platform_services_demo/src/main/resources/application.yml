@@ -15,3 +15,12 @@ spring:
     enabled: false
   application: 
     name: platform_services_demo
+  sleuth:
+    feign:
+      enabled: true
+    
+    
+ribbon: 
+  eureka:
+    enabled: true 
+
