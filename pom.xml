@@ -21,6 +21,7 @@
 		<module>platform_services_admin</module>
 		<module>platform_services_demo</module>
 		<module>platform_services_registry</module>
+		<module>platform_services_api1</module>
 	</modules>
 
 

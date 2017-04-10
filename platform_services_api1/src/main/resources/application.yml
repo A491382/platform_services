@@ -1,0 +1,17 @@
+server:
+  port: 9998
+
+management:
+  context-path: /manage
+  
+logging:
+  level:
+#   com.netflix.discovery: 'OFF'
+    org.springframework.cloud: 'DEBUG'
+    
+
+spring: 
+  application:
+    name: platform_services_api1
+  jmx: 
+    enabled: false

@@ -1,0 +1,17 @@
+eureka:
+  client: 
+    serviceUrl:
+      defaultZone: http://localhost:9999/eureka/
+
+spring: 
+  application:
+    name: platform_services_api1
+  cloud: 
+    config:
+      name: api1
+      label: master
+      discovery:
+        enabled: true
+        service-id: PLATFORM_SERVICES_CONFIGURATION
+        
+#      uri: http://localhost:8888/cfg # platform_service_configuration url
