@@ -5,13 +5,13 @@ eureka:
 
 spring: 
   application:
-    name: platform_services_demo
+    name: demo
   cloud: 
     config:
       name: demoapp
       label: master
       discovery:
         enabled: true
-        service-id: PLATFORM_SERVICES_CONFIGURATION
+        service-id: CONFIGURATION
         
 #      uri: http://localhost:8888/cfg # platform_service_configuration url

@@ -1,5 +1,6 @@
 package org.platform.services.demo.web;
 
+import java.util.List;
 import java.util.Map;
 
 import org.platform.services.demo.service.Api1Service;
@@ -24,5 +25,12 @@ public class FeignController {
 	@ResponseBody
 	public Map<String,Object> getUser(String username) {
 		return api1service.getUser(username);
+	}
+	
+	
+	@RequestMapping(value = "demo/feign/users", method = RequestMethod.GET)
+	@ResponseBody
+	public List<Map<String,Object>> getUsers() {
+		return api1service.getUsers();
 	}
 }

@@ -17,7 +17,7 @@ encrypt:
 
 spring: 
   application:
-    name: platform_services_configuration
+    name: configuration
   jmx: 
     enabled: false
   cloud: 

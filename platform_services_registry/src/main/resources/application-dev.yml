@@ -11,14 +11,14 @@ logging:
     com.netflix: 'DEBUG'
 spring:
   application:
-    name: platform_services_registry
+    name: registry
 
   
 eureka: 
   dashboard:
     path: eurekaui
   instance:
-    appname: platform_services_registry
+    appname: registry
     hostname: localhost
   client:
     registerWithEureka: true  #是否将eureka自身作为应用注册到eureka注册中心
