@@ -1,0 +1,22 @@
+server:
+  port: 8889
+
+management:
+  context-path: /manage
+  
+logging:
+  level:
+#   com.netflix.discovery: 'OFF'
+    org.springframework.cloud: 'DEBUG'
+    com.netflix: debug
+    
+spring:
+  jmx:
+    enabled: false
+  sleuth:
+    feign:
+      enabled: true
+    
+
+    
+

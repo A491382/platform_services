@@ -1,0 +1,17 @@
+#eureka:
+#  client: 
+#    serviceUrl:
+#      defaultZone: http://localhost:9999/eureka/
+
+spring: 
+  application:
+    name: security
+#  cloud: 
+#    config:
+#      name: security
+#      label: master
+#      discovery:
+#        enabled: true
+#        service-id: CONFIGURATION
+        
+#      uri: http://localhost:8888/cfg # platform_service_configuration url
